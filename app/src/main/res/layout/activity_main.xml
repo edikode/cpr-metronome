@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/logo_center">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title"
+                android:textSize="30sp"
+                android:shadowColor="@color/colorBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:layout_marginTop="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlue"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:background="@drawable/bg_gradient"
+                android:textColor="@color/colorWhite"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginTop="40dp"
+                android:text="@string/text1" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:background="@drawable/bg_gradient"
+                android:textColor="@color/colorWhite"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text2"
+                android:layout_below="@id/text1"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:background="@drawable/bg_gradient"
+                android:textColor="@color/colorWhite"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text3"
+                android:layout_below="@id/text2"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:background="@drawable/bg_gradient"
+                android:textColor="@color/colorWhite"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text4"
+                android:layout_below="@id/text3"/>
+
+            <TextView
+                android:id="@+id/text5"
+                android:background="@drawable/bg_gradient"
+                android:textColor="@color/colorWhite"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text5"
+                android:layout_below="@id/text4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_marginTop="126dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ToggleButton
+                    android:id="@+id/bpmSatu"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_button"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/bpmSatu"
+                    android:textOn="@string/toggleOff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/bpmDua"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bpmSatu"
+                    android:background="@drawable/bg_button"
+                    android:padding="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/bpmDua"
+                    android:textOn="@string/toggleOff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

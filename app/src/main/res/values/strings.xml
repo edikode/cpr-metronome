@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CPR METRONOME</string>
+    <string name="title">HIGH QUALITY CPR</string>
+    <string name="toggleOff">Stop</string>
+    <string name="text1">\tTekan Kuat (Minimum 5cm)</string>
+    <string name="text2">\tMinimalisir interupsi dalam kompresi</string>
+    <string name="text3">\tHindari ventilasi berlebihan</string>
+    <string name="text4">\tGanti penolong tiap 2 mnt / kelelahan</string>
+    <string name="text5">\tKompresi dengan Kecepatan 100-120/mnt</string>
+    <string name="bpmSatu">100 BPM</string>
+    <string name="bpmDua">120 BPM</string>
+</resources>
